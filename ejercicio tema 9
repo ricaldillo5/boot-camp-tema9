@@ -1,0 +1,43 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+     
+       Cliente c = new Cliente();
+       
+       c.mostrar_datos(25,78678,"Ricardo",18000);
+       
+       
+    }
+    
+    public static class Persona {
+        int edad;
+        int telefono;
+        String nombre;
+        
+    }   
+    
+    public static class Cliente extends Persona {
+        int credito;
+        
+        public void mostrar_datos(int edad, int telefono, String nombre, int credito){
+                this.telefono = telefono;
+                this.edad = edad;
+                this.credito = credito;
+                this.nombre = nombre;
+                
+                System.out.println("Los datos de nuestro cliente son: ");
+                System.out.println("Nombre: " + edad);
+                System.out.println("Edad: " + edad);
+                System.out.println("Telefono: " + telefono);
+                System.out.println("credito: " + credito);
+        }
+        
+        
+        
+    }
+    
+    
+    
+}
+
